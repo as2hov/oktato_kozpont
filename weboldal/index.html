@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AS2HOV Cloud Campus - Online Oktatóközpont</title>
     <style>
-        /* Alap stílusok */
+        /* Szerk.: Magyar András (AS2HOV) */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f9;
+            background-color: #daebf7;
             color: #333;
             line-height: 1.6;
         }
 
-        /* Konténer a tartalomnak */
         .container {
             width: 90%;
             max-width: 1200px;
@@ -24,9 +23,8 @@
             padding: 20px 0;
         }
 
-        /* Fejléc stílusa */
         header {
-            background: #0078d4; /* Microsoft Azure kék */
+            background: #0078d4;
             color: #ffffff;
             padding-top: 30px;
             min-height: 70px;
@@ -45,7 +43,6 @@
             margin-bottom: 20px;
         }
 
-        /* Fő tartalom (Hero Section) */
         #hero {
             background: #ffffff;
             color: #333;
@@ -64,7 +61,7 @@
 
         .cta-button {
             display: inline-block;
-            background: #107c10; /* Zöld, a siker színe */
+            background: #107c10;
             color: #ffffff;
             padding: 12px 25px;
             text-decoration: none;
@@ -78,7 +75,6 @@
             background: #005a9e;
         }
 
-        /* Szolgáltatások szekció */
         #services {
             padding: 40px 0;
             text-align: center;
@@ -117,7 +113,6 @@
             margin-top: 0;
         }
 
-        /* Lábjegyzet */
         footer {
             background: #333;
             color: #ffffff;
@@ -127,13 +122,12 @@
             font-size: 0.9em;
         }
 
-        /* Ikonok helyettesítése (egyszerű unicode karakterekkel) */
         .icon::before {
-            content: "✨";
             font-size: 2em;
             display: block;
             margin-bottom: 10px;
         }
+        .icon.csillag::before { content: "✨"; }
         .icon.nyelv::before { content: "🗣️"; }
         .icon.training::before { content: "🎯"; }
         .icon.cloud::before { content: "☁️"; }
@@ -144,15 +138,16 @@
 
     <header>
         <div class="container">
-            <h1>AS2HOV Cloud Campus - Online Oktatóközpont</h1>
-            <p>A rugalmas, felhőalapú oktatás új generációja Microsoft Teams környezetben</p>
+            <h1>AS2HOV Cloud Campus</h1>
+            <h1>Online Oktatóközpont</h1>
+            <p>A rugalmas, felhőalapú oktatás új generációja</p>
         </div>
     </header>
 
     <div class="container">
         
         <section id="hero">
-            <h2>Képzés: bárhol & bármikor</h2>
+            <h2>Képzés: bárhol & bármikor<span class="icon csillag"></span></h2>
             <p>Teljesen digitális oktatási intézményünk a legmodernebb Microsoft 365 és Azure technológiákra épül, garantálva a maximális kényelmet és biztonságot.</p>
             <a href="#contact" class="cta-button">Kérje ajánlatunkat!</a>
         </section>
@@ -197,6 +192,5 @@
             <p>&copy; 2025 AS2HOV Cloud Campus Online Oktatóközpont. Minden jog fenntartva. | Teljes mértékben felhőalapú működés. | <a href="#" style="color: #ffffff;">Adatvédelem</a></p>
         </div>
     </footer>
-
 </body>
 </html>
