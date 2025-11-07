@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCampus - Online Oktatóközpont</title>
+    <style>
+        /* Alap stílusok */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Konténer a tartalomnak */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Fejléc stílusa */
+        header {
+            background: #0078d4; /* Microsoft Azure kék */
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #005a9e 3px solid;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Fő tartalom (Hero Section) */
+        #hero {
+            background: #ffffff;
+            color: #333;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        #hero h2 {
+            font-size: 2em;
+            color: #0078d4;
+            margin-bottom: 15px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #107c10; /* Zöld, a siker színe */
+            color: #ffffff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #005a9e;
+        }
+
+        /* Szolgáltatások szekció */
+        #services {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        #services h3 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            flex: 1;
+            min-width: 280px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-item h4 {
+            color: #0078d4;
+            font-size: 1.4em;
+            margin-top: 0;
+        }
+
+        /* Lábjegyzet */
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* Ikonok helyettesítése (egyszerű unicode karakterekkel) */
+        .icon::before {
+            content: "✨";
+            font-size: 2em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .icon.nyelv::before { content: "🗣️"; }
+        .icon.training::before { content: "🎯"; }
+        .icon.cloud::before { content: "☁️"; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>CloudCampus Online Oktatóközpont</h1>
+            <p>A rugalmas, felhőalapú oktatás új generációja a Microsoft Teams környezetében.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="hero">
+            <h2>Képzés, Bárhol. Bármikor.</h2>
+            <p>Teljesen digitális oktatási intézményünk a legmodernebb Microsoft 365 és Azure technológiákra épül, garantálva a maximális biztonságot (SSO) és skálázhatóságot.</p>
+            <a href="#contact" class="cta-button">Kérje ajánlatunkat!</a>
+        </section>
+
+        <hr style="margin-top: 40px; border-color: #ddd;">
+
+        <section id="services">
+            <h3>Fő Szolgáltatásaink</h3>
+            <div class="service-grid">
+                
+                <div class="service-item">
+                    <span class="icon nyelv"></span>
+                    <h4>Nyelvi Képzések</h4>
+                    <p>Interaktív, élő órák a Teams-en keresztül, egyéni vagy kiscsoportos formában. Felkészítés vállalati és nemzetközi vizsgákra.</p>
+                </div>
+
+                <div class="service-item">
+                    <span class="icon training"></span>
+                    <h4>Vállalati Tréningek</h4>
+                    <p>Személyre szabott digitális készségfejlesztés, etika, stressz menedzsment és kommunikációs tréningek cégek számára.</p>
+                </div>
+
+                <div class="service-item">
+                    <span class="icon cloud"></span>
+                    <h4>Technológiai Előnyök</h4>
+                    <p>Működésünk alapja a felhő. Biztonságos adatkezelés (OneDrive/SharePoint), gyors elérhetőség (CDN), és rugalmas adminisztráció (ERP integráció).</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" style="text-align: center; padding: 40px 0;">
+            <h3>Lépjen Velünk Kapcsolatba</h3>
+            <p>Kezdjük el a digitális átalakulást még ma!</p>
+            <p>E-mail: info@cloudcampus.hu | Telefon: +36 55 555 5555</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 CloudCampus Online Oktatóközpont. Minden jog fenntartva. | Teljes mértékben felhőalapú működés. | <a href="#" style="color: #ffffff;">Adatvédelem</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
